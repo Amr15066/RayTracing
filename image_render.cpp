@@ -10,10 +10,10 @@ int main() {
     for (int j = 0; j < width; j++) {
         for (int i = 0; i < height; i++) 
         {
-            int r = i;
-            int g = j;
-            int b = 0;
-            
+            int r = (double(i)/height) * 255;
+            int g = (double(j)/width) * 255;
+            int b = 0.0;
+
             std::cout << r << " " << g << " " << b << "\n";
         }
     }
